@@ -35,6 +35,9 @@ export const projectsData = [
     info: 'A web application that uses the mapbox API and PredictHQ to take a geolocation input and find concerts within a date range. The application uses React, Express, MongoDB, Express sessions for local storage of cookies, and testing. The testing used Jest, enzyme, supertest, and cypress. This was a team project using the SCRUM method that held daily standups and sprint discussions. Click source code to view the repository and view the README for a more detailed view of the code and thought process.',
     info2: '',
     url: '',
+    img1: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+    img2: 'https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg',
+    img3: 'https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg',
     repo: 'https://github.com/UggBoots/scratch-concert-finder', // if no repo, the button will not show up
   },
   {
@@ -44,6 +47,9 @@ export const projectsData = [
     info: 'An application on the web that allows a user to support local businesses wherever they are. The application uses front end technologies such as React, MaterialUI, and the Google Maps API. The backend uses express, PostreSQL, and bcrypt. This was a team project using the SCRUM method that held daily standups and sprint discussions. Click source code to view the repository and view the README for a more detailed view of the code and thought process.',
     info2: '',
     url: '',
+    img1: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+    img2: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+    img3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg',
     repo: 'https://github.com/GoblinShark2021/Locals-Only', // if no repo, the button will not show up
   },
   {
@@ -53,6 +59,9 @@ export const projectsData = [
     info: 'A web app that generates a recipe filtered by ingredients that the client inputs. The techstack for this project was built using React(hooks, routers, materialUI), webpack, express, passport.js, MongoDB, and an API call to the recipe database. I used escalidraw to wireframe the frontend and functionality. I also used apply to create a folder/file structure. This was my first solo project. Click source code to view the repository and view the README for a more detailed view of the code and thought process.',
     info2: '',
     url: '',
+    img1: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+    img2: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
+    img3: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
     repo: 'https://github.com/esaldivar/meal-hacks', // if no repo, the button will not show up
   },
 ];

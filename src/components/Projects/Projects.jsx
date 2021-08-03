@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, img1, img2, img3 } = project;
 
             return (
               <Row key={id}>
@@ -48,8 +48,12 @@ const Projects = () => {
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
+                        <div className="prjImgs">
+                          {img1 && <img src={img1} alt="cypress" width="40" height="40" />}
+                          {img2 && <img src={img2} alt="cypress" width="40" height="40" />}
+                          {img3 && <img src={img3} alt="cypress" width="40" height="40" />}
+                        </div>
                       </div>
-
                       {repo && (
                         <a
                           target="_blank"
