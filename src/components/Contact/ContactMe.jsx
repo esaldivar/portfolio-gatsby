@@ -61,16 +61,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ContactMe = () => {
+const ContactMe = ({ messageSent, setMessage }) => {
+  console.log(messageSent);
+  console.log(setMessage);
+
   const classes = useStyles();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm('service_xp79009', 'template_m44f5yi', e.target, 'user_p1Kqvf8YZfsBOvT87Ij6a')
       .then(
         (result) => {
           console.log(result.text);
+          setMessage(true);
         },
         (error) => {
           console.log(error.text);
@@ -86,6 +89,7 @@ const ContactMe = () => {
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
+                error={false}
                 autoComplete="fname"
                 name="firstname"
                 variant="outlined"
@@ -93,13 +97,13 @@ const ContactMe = () => {
                 fullWidth
                 id="firstname"
                 label="First Name"
-                color="red"
                 style={{ backgroundColor: 'white', opacity: '0.75' }}
                 InputProps={{
                   classes: {
                     input: classes.resize,
                   },
                 }}
+                helperText=""
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -155,7 +159,7 @@ const ContactMe = () => {
             </Grid>
           </Grid>
 
-          <Grid container justify="flex-end">
+          <Grid container justifyContent="flex-end">
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
