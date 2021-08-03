@@ -67,11 +67,11 @@ export const projectsData = [
 ];
 
 // CONTACT DATA
-export const contactData = {
-  cta: '',
-  btn: '',
-  email: 'eric@gmail.com',
-};
+// export const contactData = {
+//   cta: '',
+//   btn: '',
+//   email: 'eric@gmail.com',
+// };
 
 // FOOTER DATA
 export const footerData = {

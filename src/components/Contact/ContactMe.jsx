@@ -34,11 +34,11 @@ const useStyles = makeStyles((theme) => ({
     width: '100%', // Fix IE 11 issue.
     marginTop: theme.spacing(3),
     '& label.Mui-focused': {
-	  fontSize: '2rem',
+      fontSize: '2rem',
     },
     '& label': {
       color: '#02aab0',
-	  fontSize: '1.5rem',
+      fontSize: '1.5rem',
     },
     '& fieldset': {
       borderColor: 'gray',
@@ -57,8 +57,8 @@ const useStyles = makeStyles((theme) => ({
     height: '3rem',
   },
   resize: {
-	  fontSize: '1.5rem',
-  }
+    fontSize: '1.5rem',
+  },
 }));
 
 const ContactMe = () => {
@@ -95,11 +95,11 @@ const ContactMe = () => {
                 label="First Name"
                 color="red"
                 style={{ backgroundColor: 'white', opacity: '0.75' }}
-				InputProps={{
-					classes: {
-					  input: classes.resize,
-					},
-				}}
+                InputProps={{
+                  classes: {
+                    input: classes.resize,
+                  },
+                }}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -112,11 +112,11 @@ const ContactMe = () => {
                 name="lastname"
                 autoComplete="lname"
                 style={{ backgroundColor: 'white', opacity: '0.75' }}
-				InputProps={{
-					classes: {
-					  input: classes.resize,
-					},
-				}}
+                InputProps={{
+                  classes: {
+                    input: classes.resize,
+                  },
+                }}
               />
             </Grid>
             <Grid item xs={12}>
@@ -129,11 +129,11 @@ const ContactMe = () => {
                 name="email"
                 autoComplete="email"
                 style={{ backgroundColor: 'white', opacity: '0.75' }}
-				InputProps={{
-					classes: {
-					  input: classes.resize,
-					},
-				}}
+                InputProps={{
+                  classes: {
+                    input: classes.resize,
+                  },
+                }}
               />
             </Grid>
             <Grid item xs={12}>
@@ -146,11 +146,11 @@ const ContactMe = () => {
                 name="subject"
                 autoComplete="subject"
                 style={{ backgroundColor: 'white', opacity: '0.75' }}
-				InputProps={{
-					classes: {
-					  input: classes.resize,
-					},
-				}}
+                InputProps={{
+                  classes: {
+                    input: classes.resize,
+                  },
+                }}
               />
             </Grid>
           </Grid>
@@ -170,11 +170,11 @@ const ContactMe = () => {
                 autoComplete="message"
                 size="medium"
                 style={{ marginTop: '2%', backgroundColor: 'white', opacity: '0.75' }}
-				InputProps={{
-					classes: {
-					  input: classes.resize,
-					},
-				}}
+                InputProps={{
+                  classes: {
+                    input: classes.resize,
+                  },
+                }}
               />
             </Grid>
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
@@ -182,7 +182,12 @@ const ContactMe = () => {
                 type="submit"
                 variant="contained"
                 className={classes.submit}
-                style={{ fontSize: '1.5rem', width: '50%', backgroundColor: 'white', color: '#02aab0' }}
+                style={{
+                  fontSize: '1.5rem',
+                  width: '50%',
+                  backgroundColor: 'white',
+                  color: '#02aab0',
+                }}
               >
                 <span style={{ marginRight: '10px' }}>
                   <FontAwesomeIcon icon={['fas', 'paper-plane']} />
