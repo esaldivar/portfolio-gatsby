@@ -2,7 +2,7 @@
 # Eric's Portfolio
 
 <p align="center">
-    <img src="./src/images/portfolio.png" width="800"/>
+    <img src="./src/images/portfolio.png" width="1200"/>
 </p>
 <p align="center">A portfolio website made with Gatsby.</p>
 
