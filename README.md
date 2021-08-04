@@ -8,6 +8,8 @@
 
 The website is live <a href="https://www.esaldivardev.com/">here</a>. It is hosted on Netlify and deploys with each push to the master branch.  It creates and uses context through React by using the information in the mock folder and the data file.  It is desktop and mobile friendly!  Please enjoy.
 
+This portfolio was forked from <a href="https://github.com/cobidev/gatsby-simplefolio">cobidev/gatsby-simplefolio</a> and edited by me.  
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
