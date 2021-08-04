@@ -96,7 +96,7 @@ const ContactMe = ({ messageSent, setMessage }) => {
                 fullWidth
                 id="firstname"
                 label="First Name"
-                style={{ backgroundColor: 'white', opacity: '0.75' }}
+                style={{ backgroundColor: 'white'}}
                 InputProps={{
                   classes: {
                     input: classes.resize,
@@ -114,7 +114,7 @@ const ContactMe = ({ messageSent, setMessage }) => {
                 label="Last Name"
                 name="lastname"
                 autoComplete="lname"
-                style={{ backgroundColor: 'white', opacity: '0.75' }}
+                style={{ backgroundColor: 'white'}}
                 InputProps={{
                   classes: {
                     input: classes.resize,
@@ -131,7 +131,7 @@ const ContactMe = ({ messageSent, setMessage }) => {
                 label="Email Address"
                 name="email"
                 autoComplete="email"
-                style={{ backgroundColor: 'white', opacity: '0.75' }}
+                style={{ backgroundColor: 'white'}}
                 InputProps={{
                   classes: {
                     input: classes.resize,
@@ -148,7 +148,7 @@ const ContactMe = ({ messageSent, setMessage }) => {
                 label="Subject"
                 name="subject"
                 autoComplete="subject"
-                style={{ backgroundColor: 'white', opacity: '0.75' }}
+                style={{ backgroundColor: 'white'}}
                 InputProps={{
                   classes: {
                     input: classes.resize,
@@ -172,7 +172,7 @@ const ContactMe = ({ messageSent, setMessage }) => {
                 id="message"
                 autoComplete="message"
                 size="medium"
-                style={{ marginTop: '2%', backgroundColor: 'white', opacity: '0.75' }}
+                style={{ marginTop: '2%', backgroundColor: 'white'}}
                 InputProps={{
                   classes: {
                     input: classes.resize,
