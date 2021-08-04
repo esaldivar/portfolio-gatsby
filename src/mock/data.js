@@ -91,6 +91,11 @@ export const footerData = {
       name: 'github',
       url: 'https://github.com/esaldivar',
     },
+    {
+      id: nanoid(),
+      name: '',
+      url: 'https://anchor.fm/javaunscripted',
+    },
   ],
 };
 
