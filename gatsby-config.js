@@ -22,13 +22,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Eric Saldivar Portfolio`,
-        short_name: `Eric Saldivar Portfolio`,
+        name: `Gatsby Simplefolio`,
+        short_name: `Simplefolio`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,
         display: `standalone`,
-        icon: 'favicon.png',
+        icon: 'src/images/favicon.png',
       },
     },
   ],
