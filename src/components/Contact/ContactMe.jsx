@@ -61,54 +61,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ContactMe = ({ messageSent, setMessage }) => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [messageBody, setMessageBody] = useState('');
-  const [errors, setErrors] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    subject: '',
-    messageBody: '',
-  });
+ 
 
   const classes = useStyles();
   const sendEmail = (e) => {
-    const fields = [firstName, lastName, email, subject, messageBody];
-    let errorsLength = 0;
-
-    fields.forEach((element, index) => {
-      console.log(element);
-      if (element.length === 0) {
-        if (index === 0) {
-          setErrors({...errors,  firstName: 'First name cannot be empty.' });
-          errorsLength += 1;
-        }
-        if (index === 1) {
-          setErrors({...errors, lastName: 'First name cannot be empty.' });
-          errorsLength += 1;
-        }
-        if (index === 2) {
-          setErrors({...errors, email: 'First name cannot be empty.' });
-          errorsLength += 1;
-        }
-        if (index === 3) {
-          setErrors({...errors, subject: 'First name cannot be empty.' });
-          errorsLength += 1;
-        }
-        if (index === 4) {
-          setErrors({...errors, messageBody: 'First name cannot be empty.' });
-          errorsLength += 1;
-        }
-      }
-    });
-
-    if (errorsLength > 0) {
-      e.preventDefault();
-      return;
-    }
+  
 
     e.preventDefault();
     emailjs
@@ -128,11 +85,10 @@ const ContactMe = ({ messageSent, setMessage }) => {
     <Container component="main" maxWidth="md" className={classes.main} id="contactMeArea">
       <CssBaseline />
       <div className={classes.contactMe}>
-        <form className={classes.form} onSubmit={sendEmail} noValidate>
+        <form className={classes.form} onSubmit={sendEmail}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
-                error={Boolean(errors?.firstName)}
                 autoComplete="fname"
                 name="firstname"
                 variant="outlined"
@@ -146,15 +102,10 @@ const ContactMe = ({ messageSent, setMessage }) => {
                     input: classes.resize,
                   },
                 }}
-                onChange={(e) => {
-                  setFirstName(e.target.value);
-                }}
-                value={firstName}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
-                error={Boolean(errors?.lastName)}
                 variant="outlined"
                 required
                 fullWidth
@@ -168,15 +119,10 @@ const ContactMe = ({ messageSent, setMessage }) => {
                     input: classes.resize,
                   },
                 }}
-                onChange={(e) => {
-                  setLastName(e.target.value);
-                }}
-                value={lastName}
               />
             </Grid>
             <Grid item xs={12}>
               <TextField
-                error={Boolean(errors?.email)}
                 variant="outlined"
                 required
                 fullWidth
@@ -190,15 +136,10 @@ const ContactMe = ({ messageSent, setMessage }) => {
                     input: classes.resize,
                   },
                 }}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                value={email}
               />
             </Grid>
             <Grid item xs={12}>
               <TextField
-                error={Boolean(errors?.subject)}
                 variant="outlined"
                 required
                 fullWidth
@@ -212,10 +153,6 @@ const ContactMe = ({ messageSent, setMessage }) => {
                     input: classes.resize,
                   },
                 }}
-                onChange={(e) => {
-                  setSubject(e.target.value);
-                }}
-                value={subject}
               />
             </Grid>
           </Grid>
@@ -223,7 +160,6 @@ const ContactMe = ({ messageSent, setMessage }) => {
           <Grid container justifyContent="flex-end">
             <Grid item xs={12}>
               <TextField
-                error={Boolean(errors?.messageBody)}
                 variant="outlined"
                 required
                 fullWidth
@@ -241,10 +177,6 @@ const ContactMe = ({ messageSent, setMessage }) => {
                     input: classes.resize,
                   },
                 }}
-                onChange={(e) => {
-                  setMessageBody(e.target.value);
-                }}
-                value={messageBody}
               />
             </Grid>
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
