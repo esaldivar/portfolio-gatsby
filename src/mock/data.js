@@ -30,6 +30,18 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'ps.png',
+    title: `Pierre's Store`,
+    info: 'A web application that simulates a e-commerce website based off of the video game Stardew Valley.  The store sells seeds, fruit trees, etc. using a relational database (postgreSQL).  The front end is built with React through Typescript and styled using Sass.  The project was made solo and it also has a testing suite using jest that is part of its continuous integration on github.  It runs the yaml scripts to use the test files that must pass before pulling to the main branch is authorized.',
+    info2: '',
+    url: '',
+    img1: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+    img2: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
+    img3: 'https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg',
+    repo: 'https://github.com/esaldivar/PierresStore', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'loop.png',
     title: `'N the Loop`,
     info: 'A web application that uses the mapbox API and PredictHQ to take a geolocation input and find concerts within a date range. The application uses React, Express, MongoDB, Express sessions for local storage of cookies, and testing. The testing used Jest, enzyme, supertest, and cypress. This was a team project using the SCRUM method that held daily standups and sprint discussions. Click source code to view the repository and view the README for a more detailed view of the code and thought process.',
