@@ -54,6 +54,14 @@ const Projects = () => {
                           {img3 && <img src={img3} alt="cypress" width="40" height="40" />}
                         </div>
                       </div>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--hero"
+                        href={url || '#!'}
+                      >
+                        See Live
+                      </a>
                       {repo && (
                         <a
                           target="_blank"
