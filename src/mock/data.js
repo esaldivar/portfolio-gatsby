@@ -23,7 +23,7 @@ export const aboutData = {
     'I utilize Javascript technologies such as React, Redux, Node and Express. I love working with relational and non-relational databases. I know each technology has a tradeoff and I work with the tech that suits the need of the work.',
   paragraphThree:
     'Beyond this I enjoy working in an Agile/Scrum environment, I have an eye for design, I love to whiteboard and draw my own wireframes. I have attached some of my most recent work below. I would love to hear from you!',
-  resume: 'https://drive.google.com/file/d/1uNU1KfoHuElM0lAEr0KT7GkEDhxe515_/view?usp=sharing', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1GDyGFJDf584RToQ3A3ZubEHcwAImdb83/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
