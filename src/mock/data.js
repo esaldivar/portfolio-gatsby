@@ -30,6 +30,18 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'rediqless.png',
+    title: `RediQLess`,
+    info: `One part Redis, one part GraphQL, this is RediQLess - a caching tool for APIs. Utilizing GraphQL’s efficient and elegant querying language and Redis’ lightweight caching, we've leveraged these two features to generate a cache of API results. Built for developers, by developers, to facilitate lightweight and performant applications.`,
+    info2: '',
+    url: 'https://http://www.rediqless.com/',
+    img1: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+    img2: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
+    img3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg',
+    repo: 'https://github.com/oslabs-beta/rediQLess', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'ps.png',
     title: `Pierre's Store`,
     info: 'A web application that simulates a e-commerce website based off of the video game Stardew Valley.  The store sells seeds, fruit trees, etc. using a relational database (postgreSQL).  The front end is built with React through Typescript and styled using Sass.  The project was made solo and it also has a testing suite using jest that is part of its continuous integration on github.  It runs the yaml scripts to use the test files that must pass before pulling to the main branch is authorized.',
@@ -37,7 +49,7 @@ export const projectsData = [
     url: 'https://serene-gorge-35395.herokuapp.com/',
     img1: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
     img2: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
-    img3: 'https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg',
+    img3: 'https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg',
     repo: 'https://github.com/esaldivar/PierresStore', // if no repo, the button will not show up
   },
   {
@@ -73,7 +85,7 @@ export const projectsData = [
     url: '',
     img1: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
     img2: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
-    img3: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
+    img3: 'https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg',
     repo: 'https://github.com/esaldivar/meal-hacks', // if no repo, the button will not show up
   },
 ];
