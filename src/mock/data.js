@@ -34,7 +34,7 @@ export const projectsData = [
     title: `RediQLess`,
     info: `One part Redis, one part GraphQL, this is RediQLess - a caching tool for APIs. Utilizing GraphQL’s efficient and elegant querying language and Redis’ lightweight caching, we've leveraged these two features to generate a cache of API results. Built for developers, by developers, to facilitate lightweight and performant applications.`,
     info2: '',
-    url: 'http://www.rediqless.com/',
+    url: 'https://www.rediqless.com/',
     img1: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
     img2: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
     img3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg',
